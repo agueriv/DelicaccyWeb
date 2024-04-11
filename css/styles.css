@@ -1,0 +1,743 @@
+/* Fonts imports */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oxygen:wght@300;400;700&display=swap");
+/* Fonts Faces */
+@font-face {
+  font-family: "Adelia";
+  src: url(../fonts/adelia.ttf), url(../fonts/adelia.otf),
+    url(../fonts/adelia.woff), url(../fonts/adelia.woff2);
+}
+
+/* Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+:root {
+  /* Customs properties */
+  /* -- colors -- */
+  --primary-color: #ffffff;
+  --text-color: rgba(255, 255, 255, 0.8);
+  --bg-color: rgb(21, 21, 21);
+  --color-gold: rgb(194, 153, 97);
+  --color-gold-opacity: rgba(194, 153, 97, 0.8);
+  --color-nav-items: rgba(255, 255, 255, 0.9);
+
+  /* -- sizes -- */
+  --size-title-hero: clamp(3rem, 2.1447rem + 3.4211vw, 6.25rem);
+  --size-fantasy-hero: clamp(3rem, 2.3092rem + 2.7632vw, 5.625rem);
+  --size-subt-hero: clamp(2rem, 1.7039rem + 1.1842vw, 3.125rem);
+
+  --size-subt-sections: clamp(
+    2.4rem,
+    2.099rem + 1.376vw,
+    3.75rem
+  ); /* fantasy de las secciones normales */
+  --size-title-sections: clamp(
+    2.4rem,
+    2.099rem + 1.376vw,
+    3.75rem
+  ); /* h2 de las secciones normales */
+  --size-btn: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem); /* botones size*/
+
+  --size-special-headers: clamp(1.8rem, 1.78rem + 0.1vw, 1.9rem); /* 30 px*/
+  --size-special-subt-headers: clamp(
+    1.8rem,
+    1.644rem + 0.713vw,
+    2.5rem
+  ); /* size para h4 de las secciones especiales */
+  --size-labels: 0.938rem;
+  --size-card-header: 1.563rem; /*tamaño de titulo de las tarjetas */
+
+  --size-text: clamp(1.25rem, 1.2171rem + 0.1316vw, 1.375rem);
+
+  /* -- weight -- */
+  --mont-medium: 500;
+  --mont-light: 300;
+
+  --ox-light: 300;
+  --ox-regular: 400;
+  --ox-bold: 700;
+
+  background-color: var(--bg-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  /* Scroll suave */
+  scroll-behavior: smooth;
+  /* Reset de los user agent styles para margen y padding */
+  margin: 0;
+  padding: 0;
+}
+/* Estilo de los h principales */
+h1 {
+  font-size: var(--size-title-hero);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+}
+
+/* Estilos para textos con Adelia */
+.fantasy {
+  font-size: var(--size-fantasy-hero);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+}
+
+/* Estilos para los subtitulos del hero */
+.subtitle-hero {
+  font-size: var(--size-subt-hero);
+  font-family: Montserrat, sans-serif;
+  font-weight: var(--mont-light);
+  color: var(--text-color);
+}
+
+/* Estilo general de los botones */
+.btn {
+  display: inline-block;
+  padding: 10px 50px;
+  font-family: Oxygen, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: var(--ox-regular);
+  font-size: var(--size-btn);
+  background-color: var(--color-gold);
+  border-radius: 1px;
+
+  margin-top: 10px;
+
+  transition: all 0.3s ease 0s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px var(--color-gold);
+  color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+/* Estilos para las palabras resaltadas */
+.dest {
+  font-weight: var(--ox-bold);
+}
+
+/* ------ MENU NAV ------ */
+.menu {
+  width: 85%;
+  margin: 0 auto;
+  height: 125px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.list-nav {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.nav-item a {
+  font-family: Montserrat, sans-serif;
+  font-size: var(--size-text);
+  color: var(--color-nav-items);
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  color: var(--color-gold);
+}
+
+.active a {
+  color: var(--color-gold) !important;
+}
+
+.active a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--color-gold);
+  position: absolute;
+  top: 10px;
+  left: -15px;
+}
+
+.nav-item:first-child,
+.nav-item:nth-child(2),
+.nav-item:nth-child(3) {
+  margin-right: 6rem;
+}
+
+/* ------- MENU COLLAPSE ---------- */
+.abrirMenu,
+.closeBtn {
+  display: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--color-gold);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .abrirMenu {
+    display: block;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-color);
+    padding: 3rem;
+    box-shadow: 0 0 0 100vmax rgba(21, 21, 21, 0.5);
+
+    opacity: 0;
+    display: none;
+
+    animation: menuIn 1s;
+  }
+
+  @keyframes menuIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .visible {
+    opacity: 1;
+    display: block;
+  }
+
+  .list-nav {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-item {
+    margin-bottom: 2rem;
+  }
+
+  .closeBtn {
+    display: block;
+    margin-bottom: 2rem;
+    margin-left: auto;
+  }
+
+  .nav-item:first-child,
+  .nav-item:nth-child(2),
+  .nav-item:nth-child(3) {
+    margin-right: 0 !important;
+  }
+}
+
+/* ------ CLASES PERSONALIZADAS ------ */
+/* Clase para hacer que los h1 se dividan en varias lineas */
+.br {
+  display: block;
+}
+
+/* ----------- PAGE HEADER ---------------- */
+header {
+  height: 100vh;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-flow: column;
+
+  overflow: hidden;
+}
+
+header .content {
+  width: 85%;
+  margin: auto;
+}
+
+header .content h2 {
+  margin-bottom: 0.5rem;
+}
+
+header .content h1 {
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+/* ---------- FOOTER STYLES -------- */
+footer {
+  width: 85%;
+  margin: 0 auto;
+  padding: 200px 0;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+footer .logoContainer {
+  flex: 1 0 100%;
+  margin-bottom: 75px;
+}
+
+footer .logoContainer a {
+  display: inline-block;
+}
+
+.logoContainer .logo {
+  width: 250px;
+  height: 160px;
+  background-image: url("../img/delicaccy_logo.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footerElement {
+  flex: 1;
+}
+
+.footerElement h2 {
+  font-family: Montserrat;
+  color: var(--primary-color);
+  font-weight: var(--mont-medium);
+  font-size: var(--size-special-headers);
+  margin-bottom: 1.825rem;
+}
+
+.footerElement p {
+  font-family: Oxygen, sans-serif;
+  font-size: var(--size-text);
+  color: var(--text-color);
+  width: 70%;
+  font-weight: var(--ox-regular);
+  line-height: 1.8rem;
+}
+
+.socials {
+  width: clamp(11.25rem, 10.9375rem + 1.5625vw, 12.8125rem);
+  height: 40px;
+  margin-top: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.socials a {
+  flex: 1;
+}
+
+.socials a .social {
+  width: 35px;
+  aspect-ratio: 1 / 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social {
+  transition: all 0.3s ease 0s;
+}
+
+.social:hover,
+.social:focus {
+  transform: rotate(5deg) translateY(-2px);
+}
+
+.social:active {
+  transform: scale(1.1);
+}
+
+.insta {
+  background-image: url("../img/icons/social/instagram.svg");
+}
+
+.twitter {
+  background-image: url("../img/icons/social/twitter.svg");
+}
+
+.fb {
+  background-image: url("../img/icons/social/facebook.svg");
+}
+
+.tripadvisor {
+  background-image: url("../img/icons/social/tripadvisor.svg");
+}
+
+.footerElement .pageItem a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-regular);
+  font-size: var(--size-text);
+  line-height: 2.5rem;
+  position: relative;
+
+  transition: all 0.5s ease 0s;
+}
+
+.footerElement .pageItem a:hover,
+.footerElement .pageItem a:focus {
+  color: var(--color-gold);
+  margin-left: 20px;
+}
+
+.footerElement .pageItem a:hover::before,
+.footerElement .pageItem a:focus::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icons/arrowGold.svg");
+  position: absolute;
+  top: 5px;
+  left: -25px;
+}
+
+.footerElement .getintouchItem {
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-regular);
+  font-size: var(--size-text);
+  line-height: 2.5rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+/* Get in touch icons styles */
+.touchIcon {
+  flex: 1;
+  color: var(--color-gold);
+}
+
+.fa-map-pin {
+  font-size: 1.8rem;
+}
+
+.getintouchItem span {
+  flex: 9;
+}
+
+.getintouchItem span a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease 0s;
+}
+
+.getintouchItem span a:hover,
+.getintouchItem span a:focus {
+  color: var(--color-gold);
+}
+
+/* ---------- SUBFOOTER STYLES --------- */
+.subFooter {
+  width: 85%;
+  margin: 0 auto;
+  padding: 45px 0;
+  border-top: 1px solid var(--color-gold-opacity);
+}
+
+.subFooter p {
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-size: var(--size-text);
+  font-weight: var(--ox-light);
+}
+
+.subFooter p a {
+  text-decoration: none;
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  color: var(--text-color);
+
+  transition: all 0.3s ease 0s;
+}
+
+.subFooter p a:hover,
+.subFooter p a:focus {
+  color: var(--color-gold);
+}
+
+/* ------------ MEDIA QUERIES ----------- */
+@media screen and (max-width: 1280px) {
+  .nav-item:first-child,
+  .nav-item:nth-child(2),
+  .nav-item:nth-child(3) {
+    margin-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-item:first-child,
+  .nav-item:nth-child(2),
+  .nav-item:nth-child(3) {
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  footer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  footer .btn {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .getintouchItem span {
+    flex: 6;
+  }
+
+  .footerElement p {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    background-attachment: scroll;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    width: 85%;
+    justify-content: space-between;
+    padding-bottom: 150px;
+  }
+
+  .footerElement {
+    flex: 1 0 50%;
+  }
+
+  .divAuxFooter {
+    width: 17rem;
+    margin-left: auto;
+  }
+
+  .footerElement p {
+    width: 75%;
+  }
+
+  .mb-50 {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .divAuxFooter {
+    margin-left: 0;
+  }
+
+  .mb-50 {
+    margin-bottom: 0;
+  }
+
+  .footerElement {
+    margin-bottom: 80px;
+  }
+
+  .footerElement:last-child {
+    margin-bottom: 0;
+  }
+
+  footer {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .content h2,
+  header .content h3,
+  header .content h1 {
+    text-align: center;
+  }
+
+  header .content h1 > .br {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .footerElement p {
+    width: 100%;
+  }
+
+  .rights {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header .content {
+    width: 100%;
+  }
+}
+
+
+/* --------- MEDIA QUERIES PARA ALTO DE HEADER ------ */
+@media screen and (max-height: 720px) {
+  header {
+    height: 720px;
+    background-attachment: scroll;
+  }
+}

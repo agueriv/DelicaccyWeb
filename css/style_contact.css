@@ -1,0 +1,646 @@
+/* ------------ HEADER ------------- */
+header {
+  margin-bottom: 200px;
+}
+
+/* ------------- CONTACT INFORMATION ------------- */
+.contactInfo {
+  width: 85%;
+  margin-inline: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+
+  margin-bottom: 200px;
+}
+
+.infoHeader {
+  display: flex;
+  flex-flow: column nowrap;
+
+  margin-bottom: 100px;
+}
+
+.infoHeader h2 {
+  text-align: left;
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+}
+
+.infoHeader h3 {
+  text-align: left;
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.infoItems {
+  display: flex;
+  width: 80%;
+  margin-inline: auto;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.infoItem {
+  flex: 1;
+  text-align: center;
+}
+
+.infoItem h4 {
+  font-family: Montserrat, sans-serif;
+  font-size: var(--size-special-headers);
+  color: var(--primary-color);
+  font-weight: var(--mont-medium);
+  padding-bottom: 1.25rem;
+  letter-spacing: 2px;
+}
+
+.infoItemSeparator {
+  width: 5rem;
+  height: 1px;
+  background-color: var(--color-gold);
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+}
+
+.infoItem p {
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  color: var(--text-color);
+}
+
+/* ------------ RESERVE INTERFACE ----------- */
+.reserve {
+  width: 100%;
+  background-color: var(--color-gold);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-block: 100px;
+
+  margin-bottom: 200px;
+}
+
+.reserveHeader {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 80px;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 3rem;
+}
+
+.reserveForm > .row > .control {
+  flex: 1;
+}
+
+.reserveHeader h2 {
+  text-align: center;
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--bg-color);
+  order: 1;
+}
+
+.reserveHeader h3 {
+  text-align: center;
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--primary-color);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.reserveForm {
+  width: 40%;
+}
+
+.reserveForm .control {
+  margin-bottom: 75px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.reserveForm .control label {
+  display: block;
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-bold);
+  font-size: 0.9rem;
+  color: var(--bg-color);
+  margin-bottom: 10px;
+  order: 0;
+}
+
+.reserveForm .control input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.6);
+  font-size: var(--size-text);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  padding-bottom: 3px;
+  color: var(--bg-color);
+  order: 1;
+}
+
+.control select {
+  color: rgba(21, 21, 21, 0.4) !important;
+}
+
+.reserveForm .control select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.6);
+  font-size: var(--size-text);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  padding-bottom: 3px;
+  color: var(--bg-color);
+  order: 1;
+  cursor: pointer;
+}
+
+.reserveForm .control input::placeholder,
+.reserveForm .control textarea::placeholder {
+  font-family: Oxygen, sans-serif;
+  font-size: var(--size-text);
+  color: rgba(21, 21, 21, 0.4);
+}
+
+.reserveForm .control input:focus + label,
+.reserveForm .control textarea:focus + label {
+  color: var(--primary-color);
+}
+
+.reserveForm .control input:focus,
+.reserveForm .control textarea:focus {
+  border-color: var(--bg-color);
+}
+
+.reserveForm .control textarea {
+  width: 100%;
+  resize: none;
+  height: 130px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(194, 153, 94, 0.75);
+  font-size: var(--size-text);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  padding-bottom: 3px;
+  color: var(--text-color);
+  order: 1;
+}
+
+table,
+td,
+th {
+  font-family: Oxygen, sans-serif;
+  text-align: center;
+  color: rgba(21, 21, 21, .8);
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 5px;
+  width: 30px;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+}
+
+tr > .arrow {
+  background-image: url(../img/icons/arrow.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+tr > .arrow:first-child {
+  transform: rotate(180deg);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.head {
+  background-color: rgba(164, 124, 69, 0.384);
+  padding-bottom: 10px;
+}
+
+.reserveForm > .formButton {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.reserveForm button {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--bg-color);
+}
+
+.reserveForm button:hover {
+  background-color: var(--color-gold);
+  box-shadow: inset 0 0 0 1px var(--bg-color);
+  color: var(--bg-color);
+}
+/* ---------- PRIVATE EVENTS STYLES ----------- */
+.privateEvents {
+  width: 85%;
+  margin-inline: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+  margin-bottom: 200px;
+}
+
+.eventsContent {
+  flex: 1;
+  margin-right: 40px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.eventsContent h2 {
+  text-align: right;
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+  margin-bottom: 3.75rem;
+}
+
+.eventsContent h3 {
+  text-align: right;
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.eventsContent p {
+  text-align: right;
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  line-height: 2.1rem;
+  margin-bottom: 40px;
+  order: 2;
+}
+
+.eventsContent a {
+  order: 3;
+  width: clamp(18.75rem, 15.963rem + 12.739vw, 31.25rem);
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: auto;
+}
+
+.eventsImage {
+  flex: 1;
+  margin-left: 40px;
+  height: 820px;
+  background-image: url("../img/contact/fotoBoda.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 1px;
+}
+
+/* -------------- CONTACT FORM AND MAP SECTION --------------- */
+.contactUs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+
+.map {
+  flex: 1;
+  height: 62.5rem;
+
+  margin-right: 60px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contactUsContent {
+  flex: 1;
+  margin-left: 40px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.contactUsContent h2 {
+  text-align: left;
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+  margin-bottom: 7.5rem;
+}
+
+.contactUsContent h3 {
+  text-align: left;
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.contactUsContent > form {
+  order: 2;
+  width: clamp(18.75rem, 12.898rem + 26.752vw, 45rem);
+}
+
+.contactUsContent > form > .control {
+  margin-bottom: 75px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.contactUsContent > form > .control label {
+  display: block;
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-bold);
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  order: 0;
+}
+
+.contactUsContent > form > .control input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(194, 153, 94, 0.75);
+  font-size: var(--size-text);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  padding-bottom: 3px;
+  color: var(--text-color);
+  order: 1;
+}
+
+.control input::placeholder,
+.control textarea::placeholder {
+  font-family: Oxygen, sans-serif;
+  font-size: var(--size-text);
+}
+
+.contactUsContent > form > .control input:focus + label,
+.contactUsContent > form > .control textarea:focus + label {
+  color: var(--color-gold);
+}
+
+.contactUsContent > form > .control input:focus,
+.contactUsContent > form > .control textarea:focus {
+  border-color: var(--color-gold);
+}
+
+.contactUsContent > form > .control textarea {
+  width: 100%;
+  resize: none;
+  height: 130px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(194, 153, 94, 0.75);
+  font-size: var(--size-text);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  padding-bottom: 3px;
+  color: var(--text-color);
+  order: 1;
+}
+
+.contactUsContent > form > button {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* ---------------- MEDIA QUERIES -------------- */
+@media screen and (max-width: 1660px) {
+  .privateEvents {
+    width: 90%;
+  }
+
+  .reserveForm {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .infoItems {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .privateEvents {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header .content h1 {
+    text-shadow: 1px 1px 1px rgba(21, 21, 21, 0.8);
+  }
+
+  .contactInfo {
+    margin-bottom: 150px;
+  }
+  .reserve {
+    margin-bottom: 150px;
+  }
+  .privateEvents {
+    width: 100%;
+    flex-flow: column wrap;
+    margin-bottom: 150px;
+  }
+
+  .eventsImage {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    background-image: url(../img/contact/bodaRes.jpg);
+    background-size: cover;
+    margin-left: 0;
+    order: 1;
+  }
+
+  .eventsContent {
+    width: 85%;
+    margin-right: 0;
+    order: 0;
+    margin-bottom: 150px;
+  }
+
+  .eventsContent h2,
+  .eventsContent h3 {
+    text-align: left;
+  }
+
+  .eventsContent p {
+    text-align: justify;
+    width: 100%;
+  }
+
+  .eventsContent a {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .contactUs {
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 0;
+  }
+
+  .map {
+    order: 1;
+    width: 100%;
+    margin-inline: 0;
+    aspect-ratio: 2 / 1;
+  }
+
+  .contactUsContent {
+    margin-bottom: 150px;
+    margin-left: 0;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+  }
+
+  .contactUsContent h3,
+  .contactUsContent h2 {
+    text-align: center;
+  }
+
+  .contactUsContent > form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .infoItem:first-child,
+  .infoItem:nth-child(2) {
+    margin-bottom: 80px;
+  }
+  .infoItem {
+    flex: 1 0 50%;
+  }
+
+  .reserveForm {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map {
+    aspect-ratio: 4 / 3;
+  }
+
+  .reserveForm .row {
+    flex-flow: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .reserveForm .row:nth-child(2) .control:first-child {
+    order: 1;
+  }
+
+  .row {
+    gap: 0;
+  }
+
+  .row .control {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    margin-bottom: 150px;
+  }
+
+  .infoHeader {
+    align-items: center;
+    align-content: center;
+  }
+
+  .infoHeader h2,
+  .infoHeader h3 {
+    text-align: center;
+  }
+
+  .infoItem:not(.infoItem:last-child) {
+    margin-bottom: 80px;
+  }
+
+  .infoItem {
+    flex: 1 0 100%;
+  }
+}

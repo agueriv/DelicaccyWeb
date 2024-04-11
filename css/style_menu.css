@@ -1,0 +1,775 @@
+/* ------------ HEADER ------------- */
+header {
+  margin-bottom: 200px;
+}
+
+/* --------------- PRINCIPAL DISH 1 ------------ */
+.principalDishUnoHeader {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 200px;
+}
+
+.principalDishUnoHeaderImage {
+  flex: 6;
+  height: 56.25rem;
+  background-image: url("../img/menu/principal1ft1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1px;
+}
+
+.principalDishUnoHeaderContent {
+  flex: 4;
+}
+
+.principalDishUnoHeaderContent .container {
+  padding: 95px 0;
+  padding-left: 60px;
+  background-color: var(--bg-color);
+  margin-left: -130px;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  border-radius: 7px;
+}
+
+.principalDishUnoHeaderContent .container h2 {
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+  margin-bottom: 1.9rem;
+}
+
+.principalDishUnoHeaderContent .container h3 {
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.principalDishUnoHeaderContent .container h4 {
+  color: var(--text-color);
+  font-family: Montserrat, sans-serif;
+  font-weight: var(--mont-light);
+  font-size: var(--size-special-subt-headers);
+  order: 2;
+  width: 90%;
+}
+
+/* principal dish 1 section 2 */
+.principalDishUnoContent {
+  width: 85%;
+  margin-inline: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 200px;
+}
+
+.principalDishUnoContentText {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.principalDishUnoContentText p {
+  text-align: left;
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  line-height: 2.1rem;
+  margin-bottom: 40px;
+}
+
+.principalDishUnoContentImage {
+  margin-left: 40px;
+  flex: 1;
+  height: 820px;
+  background-image: url(../img/menu/principalDishFoto2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* --------------- PRINCIPAL DISH 2 ------------ */
+.principalDishDosHeader {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 200px;
+}
+
+.principalDishDosHeaderImage {
+  flex: 6;
+  height: 56.25rem;
+  background-image: url("../img/menu/principal2ft1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1px;
+}
+
+.principalDishDosHeaderContent {
+  flex: 4;
+}
+
+.principalDishDosHeaderContent .container {
+  text-align: right;
+  padding: 95px 0;
+  padding-right: 60px;
+  background-color: var(--bg-color);
+  margin-right: -130px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  align-content: flex-end;
+
+  position: relative;
+  z-index: 9999;
+  border-radius: 7px;
+}
+
+.principalDishDosHeaderContent .container h2 {
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+  margin-bottom: 1.9rem;
+}
+
+.principalDishDosHeaderContent .container h3 {
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.principalDishDosHeaderContent .container h4 {
+  text-align: right;
+  color: var(--text-color);
+  font-family: Montserrat, sans-serif;
+  font-weight: var(--mont-light);
+  font-size: var(--size-special-subt-headers);
+  order: 2;
+  width: 90%;
+}
+
+/* principal dish 2 section 2 */
+.principalDishDosContent {
+  width: 85%;
+  margin-inline: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 200px;
+}
+
+.principalDishDosContentText {
+  flex: 1;
+  margin-left: 40px;
+}
+
+.principalDishDosContentText p {
+  text-align: left;
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  line-height: 2.1rem;
+  margin-bottom: 40px;
+}
+
+.principalDishDosContentImage {
+  margin-right: 40px;
+  flex: 1;
+  height: 820px;
+  background-image: url(../img/menu/principalDish2Foto2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ------------ SECONDARY DISHES ----------- */
+.secondaryDishes {
+  width: 85%;
+  margin-inline: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+
+  margin-bottom: 200px;
+}
+
+.secondaryDishesHeader {
+  display: flex;
+  flex-flow: column nowrap;
+
+  margin-bottom: 6.25rem;
+}
+
+.secondaryDishesHeader h2 {
+  text-align: left;
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+  margin-bottom: 3.75rem;
+}
+
+.secondaryDishesHeader h3 {
+  text-align: left;
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.secondaryDishesCards {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: clamp(1.25rem, -1.146rem + 7.986vw, 8.438rem);
+}
+
+.secondaryDishesCard {
+  flex: 1 0 21.8rem;
+  text-align: center;
+}
+
+.secondaryDishesCard:nth-child(2) {
+  transform: translateY(95px);
+  margin-bottom: 95px;
+}
+
+.secondaryDishesCard:first-child .secondaryDishesCardImage {
+  background-image: url(../img/menu/secondaryDish1.jpg);
+}
+
+.secondaryDishesCard:nth-child(2) .secondaryDishesCardImage {
+  background-image: url(../img/menu/secondaryDish2.jpg);
+}
+
+.secondaryDishesCard:last-child .secondaryDishesCardImage {
+  background-image: url(../img/menu/secondaryDish3.jpg);
+}
+
+.secondaryDishesCardImage {
+  width: 100%;
+  height: 40.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 1px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 3.125rem;
+}
+
+.secondaryDishesDescription h4 {
+  font-size: var(--size-card-header);
+  color: var(--primary-color);
+  font-family: Montserrat, sans-serif;
+  font-weight: var(--mont-medium);
+  margin-bottom: 1.5rem;
+}
+
+.secondaryDishesDescription p {
+  font-size: var(--size-text);
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  line-height: 2.1rem;
+}
+
+/* ------------ WINE LIST ----------- */
+.wines {
+  width: 85%;
+  margin-inline: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+
+  margin-bottom: 200px;
+}
+
+.winesHeader {
+  display: flex;
+  flex-flow: column nowrap;
+
+  margin-bottom: 6.25rem;
+}
+
+.winesHeader h2 {
+  text-align: right;
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+  margin-bottom: 3.75rem;
+}
+
+.winesHeader h3 {
+  text-align: right;
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.winesCards {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: clamp(1.25rem, -1.146rem + 7.986vw, 8.438rem);
+}
+
+.winesCard {
+  flex: 1 0 21.8rem;
+  text-align: center;
+}
+
+.winesCard:first-child,
+.winesCard:last-child {
+  transform: translateY(95px);
+  margin-bottom: 95px;
+}
+
+.winesCard:first-child .winesCardImage {
+  background-image: url(../img/menu/wine_le_ermita.jpg);
+}
+
+.winesCard:nth-child(2) .winesCardImage {
+  background-image: url(../img/menu/wine_laFaraona.jpg);
+}
+
+.winesCard:last-child .winesCardImage {
+  background-image: url(../img/menu/wine_chateau.jpg);
+}
+
+.winesCardImage {
+  width: 100%;
+  height: 40.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 1px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 3.125rem;
+}
+
+.winesDescription h4 {
+  font-size: var(--size-card-header);
+  color: var(--primary-color);
+  font-family: Montserrat, sans-serif;
+  font-weight: var(--mont-medium);
+  margin-bottom: 1.5rem;
+}
+
+/* ---------- TASTINGS MENUS ---------- */
+.tastingMenus {
+  width: 85%;
+  margin-inline: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.tastingMenusHeader {
+  flex: 1 0 100%;
+  display: flex;
+  flex-flow: column nowrap;
+
+  margin-bottom: 4.688rem;
+}
+
+.tastingMenusHeader h2 {
+  text-align: center;
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+}
+
+.tastingMenusHeader h3 {
+  text-align: center;
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.tastingMenusItem {
+  flex: 1;
+  border: 1px solid var(--color-gold);
+  text-align: center;
+  padding: 1rem;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+
+  position: relative;
+}
+/* Boton situado en el borde del menú de degustación */
+.reserveBtn {
+  font-family: Montserrat, sans-serif;
+  text-decoration: none;
+  color: var(--bg-color);
+  font-weight: 100;
+  font-size: var(--size-btn);
+  letter-spacing: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 240px;
+  height: 60px;
+  background-color: var(--color-gold);
+  position: absolute;
+
+  transform: rotate(-90deg);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.reserveBtn:hover,
+.reserveBtn:focus {
+  background-color: var(--bg-color);
+  color: var(--color-gold);
+  box-shadow: inset 0px 0px 0px 1px var(--color-gold);
+}
+/* Clase del boton del menu degustacion 1 */
+.rbtn1 {
+  left: -120px;
+  top: 150px;
+}
+/* Calse del boton del menu degustacion 2 */
+.rbtn2 {
+  right: -120px;
+  top: 150px;
+}
+
+.tastingMenusItem h4 {
+  display: inline-block;
+  font-family: Montserrat, sans-serif;
+  font-size: var(--size-special-headers);
+  color: var(--primary-color);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-gold);
+  margin-bottom: 3.125rem;
+}
+
+.tastingMenusItem ul h5 {
+  font-family: Oxygen, sans-serif;
+  font-size: var(--size-text);
+  font-weight: var(--ox-regular);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 2.813rem;
+}
+
+.tastingMenusItem ul li {
+  font-family: Oxygen, sans-serif;
+  font-size: var(--size-text);
+  font-weight: var(--ox-light);
+  color: var(--text-color);
+  margin-bottom: 2.188rem;
+  line-height: 2.1rem;
+}
+
+.menuSeparator {
+  width: 6.25rem;
+  height: 1px;
+  margin: 60px auto !important;
+  background-color: rgba(194, 153, 94, 0.7);
+}
+
+.bigMenuSeparator {
+  width: 15.625rem;
+  height: 1px;
+  margin: 70px auto !important;
+  background-color: rgba(194, 153, 94, 0.7);
+}
+
+.tastingMenuUno {
+  margin-right: clamp(1.25rem, 0.417rem + 2.778vw, 3.75rem);
+}
+
+.tastingMenuDos {
+  margin-left: clamp(1.25rem, 0.417rem + 2.778vw, 3.75rem);
+}
+
+.lastMenuElements {
+  margin-bottom: 0.9rem !important;
+}
+
+.menuPrize {
+  font-size: var(--size-special-headers) !important;
+  font-weight: var(--ox-regular);
+  margin-bottom: 1.875rem !important;
+}
+
+/* -------------- MEDIA QUERIES ---------------- */
+@media screen and (max-width: 1710px) {
+  .tastingMenus {
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tastingMenusItem {
+    margin-inline: 0;
+    width: 70%;
+  }
+
+  .tastingMenuUno {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 1462px) {
+  .secondaryDishesHeader,
+  .winesHeader {
+    margin-bottom: 100px;
+  }
+
+  .secondaryDishesHeader h2,
+  .winesHeader h2 {
+    margin-bottom: 0;
+  }
+
+  .secondaryDishesCards,
+  .winesCards {
+    justify-content: center;
+  }
+  .secondaryDishesCard:nth-child(2),
+  .winesCard:first-child,
+  .winesCard:last-child {
+    transform: translateY(0);
+  }
+
+  .secondaryDishesCard,
+  .winesCard {
+    margin-bottom: 80px;
+  }
+
+  .secondaryDishesCard:last-child,
+  .winesCard:last-child {
+    max-width: 45%;
+    margin-bottom: 0;
+  }
+
+  .winesCardImage,
+  .secondaryDishesCardImage {
+    aspect-ratio: 3 / 4;
+    height: auto;
+  }
+
+  .winesDescription,
+  .secondaryDishesDescription {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .winesDescription h4,
+  .secondaryDishesDescription h4 {
+    line-height: 2.5rem;
+  }
+
+  .tastingMenusItem {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  header .content h2 {
+    text-shadow: 1px 1px 1px rgba(21, 21, 21, 0.8);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .principalDishUnoHeader,
+  .principalDishDosHeader {
+    margin-bottom: 150px;
+  }
+
+  .principalDishUnoContent,
+  .principalDishDosContent {
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+
+  .principalDishUnoContentText,
+  .principalDishDosContentText {
+    margin-inline: 0;
+    width: 80%;
+    margin-bottom: 150px;
+    order: 0;
+  }
+
+  .principalDishUnoContentText p:last-child,
+  .principalDishDosContentText p:last-child {
+    margin-bottom: 0;
+  }
+
+  .principalDishUnoContentImage,
+  .principalDishDosContentImage {
+    width: 100%;
+    aspect-ratio: 2 / 1.2;
+    background-position: center;
+    background-size: cover;
+    margin-inline: 0;
+    order: 1;
+  }
+
+  .principalDishUnoContentImage {
+    background-image: url(../img/menu/principal1ft2Res.jpg);
+  }
+  .principalDishDosContentImage {
+    background-image: url(../img/menu/principal2ft2Res.jpg);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .principalDishUnoHeader,
+  .principalDishDosHeader {
+    flex-flow: column wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .principalDishUnoHeaderContent,
+  .principalDishDosHeaderContent {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  .principalDishUnoHeaderContent .container,
+  .principalDishDosHeaderContent .container {
+    margin: 0;
+    padding: 0;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .principalDishUnoHeaderContent .container h2,
+  .principalDishDosHeaderContent .container h2 {
+    margin-bottom: 1.2rem;
+  }
+
+  .principalDishUnoHeaderContent > .container > h2 > .br,
+  .principalDishDosHeaderContent > .container > h2 > .br {
+    display: inline-block;
+  }
+
+  .principalDishUnoHeaderImage,
+  .principalDishDosHeaderImage {
+    order: 1;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+  }
+
+  .tastingMenusItem {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 881px) {
+  .secondaryDishesCard,
+  .winesCard {
+    max-width: 90% !important;
+  }
+
+  .winesCardImage,
+  .secondaryDishesCardImage {
+    aspect-ratio: 3 / 3.5;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .principalDishUnoContentText,
+  .principalDishDosContentText {
+    width: 95%;
+  }
+
+  .principalDishUnoContentText p,
+  .principalDishDosContentText p {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .tastingMenusItem {
+    margin-bottom: 100px;
+  }
+
+  .reserveBtn {
+    position: absolute;
+
+    transform: rotate(0deg);
+
+    transition: all 0.2s ease-in-out;
+  }
+
+  .rbtn1,
+  .rbtn2 {
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    bottom: -30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .principalDishUnoHeaderImage,
+  .principalDishDosHeaderImage {
+    aspect-ratio: 3 / 3.5;
+  }
+
+  .principalDishUnoContentImage,
+  .principalDishDosContentImage {
+    aspect-ratio: 3 / 2.8;
+  }
+}

@@ -1,0 +1,815 @@
+/* ------------ HEADER ------------- */
+header {
+  margin-bottom: 200px;
+}
+
+header .content h3 {
+  text-shadow: 1px 1px 1px #212121;
+}
+
+.nav-item a {
+  color: var(--color-bg);
+}
+
+/* Menu collapse media querie */
+@media screen and (max-width: 850px) {
+  .nav-item a {
+    color: var(--primary-color);
+  }
+}
+
+/* ----------- PRINCIPAL CHEF ------------ */
+.headChefHeader {
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 200px;
+}
+
+.headChefHeaderImage {
+  flex: 6;
+  height: 78.125rem;
+  background-image: url("../img/team/javiMartinez.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1px;
+}
+
+.headChefHeaderContent {
+  flex: 4;
+}
+
+.container {
+  padding: 95px 0;
+  padding-left: 60px;
+  background-color: var(--bg-color);
+  margin-left: -130px;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  border-radius: 7px;
+}
+
+.headChefHeaderContent .container h2 {
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+  margin-bottom: 1.9rem;
+}
+
+.headChefHeaderContent .container h3 {
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.headChefHeaderContent .container h4 {
+  color: var(--text-color);
+  font-family: Montserrat, sans-serif;
+  font-weight: var(--mont-light);
+  font-size: var(--size-special-subt-headers);
+  order: 2;
+  width: 90%;
+}
+
+/* ---------MAIN DE HEAD CHEF ----------- */
+.headChefMain {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: clamp(0.9375rem, -1.2829rem + 8.8816vw, 9.375rem);
+  margin-bottom: 400px;
+}
+
+.headChefMainLeft {
+  flex: 5;
+}
+
+.headChefMainLeft p {
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  line-height: 2.1rem;
+  margin-bottom: 40px;
+  margin-left: clamp(0.938rem, -5.313rem + 16.667vw, 9.688rem);
+}
+
+.headChefMainLeft p:last-child {
+  margin-bottom: 12.5rem;
+}
+
+.headChefMainLeftImage {
+  height: 51.25rem;
+  background-image: url(../img/team/javier_foto4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1px;
+}
+
+.headChefMainRight {
+  flex: 3;
+}
+
+.headChefMainRightImage {
+  height: 62.5rem;
+  background-image: url(../img/team/javier_foto3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1px;
+  margin-bottom: 3.125rem;
+}
+
+.headChefMainRightContent {
+  width: 82%;
+}
+
+.javierCita {
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-bold);
+  font-size: var(--size-text);
+  text-align: center;
+  line-height: 2.1rem;
+  margin-bottom: 1.563rem;
+}
+
+.headChefMainRightContent p:last-child {
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  text-align: center;
+  line-height: 2.1rem;
+}
+
+/* ------------- CUISINE TEAM ----------- */
+.cuisineTeam {
+  width: 100%;
+
+  margin-bottom: 400px;
+}
+
+.cuisineTeamHeader {
+  width: 100%;
+  height: 600px;
+  background-color: var(--color-gold);
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: flex-end;
+
+  margin-bottom: 200px;
+}
+
+.cuisineTeamHeaderContent {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.cuisineTeamHeaderContent h2 {
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--bg-color);
+  order: 1;
+  margin-bottom: 1.9rem;
+}
+
+.cuisineTeamHeaderContent h3 {
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--primary-color);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.cuisineTeamHeaderImage {
+  flex: 1;
+  background-image: url(../img/team/chef_afro_sbg.png);
+  height: 800px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* ------------ cuisine team description ---------- */
+.cuisineTeamDescription {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+  margin-bottom: 200px;
+}
+
+.cuisineTeamDescriptionImage {
+  flex: 2;
+  background-image: url(../img/icons/ForkandKnife.svg);
+  height: 310px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.cuisineTeamDescriptionContent {
+  flex: 4;
+}
+
+.cuisineTeamDescriptionContent p {
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  line-height: 2.1rem;
+  margin-bottom: 40px;
+}
+
+/* ---------- cuisine members ------------ */
+.cuisineTeamMembers {
+  width: 85%;
+  margin-inline: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 3.75rem;
+}
+
+.cuisineTeamMember {
+  flex: 1 0 21.875rem;
+  text-align: center;
+  max-width: 75%;
+}
+
+.memberFoto {
+  width: 100%;
+  height: 43.75rem;
+  margin-bottom: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: skyblue;
+}
+
+.cuisineTeamMember:first-child .memberFoto {
+  background-image: url(../img/team/chefPrincipalJavier.jpg);
+}
+.cuisineTeamMember:nth-child(2) .memberFoto {
+  background-image: url(../img/team/chefMarta.jpg);
+}
+.cuisineTeamMember:last-child .memberFoto {
+  background-image: url(../img/team/chefAsanne.jpg);
+}
+
+.cuisineTeamMember h5 {
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  margin-bottom: 1.25rem;
+}
+
+.cuisineTeamMember h4 {
+  font-size: var(--size-card-header);
+  color: var(--primary-color);
+  font-family: Montserrat, sans-serif;
+  font-weight: var(--mont-medium);
+  margin-bottom: 2.1rem;
+}
+
+.cardSocials {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 40px;
+  width: 11rem;
+  margin: 0 auto;
+}
+
+.cardSocials a div {
+  transition: all 0.3s ease 0s;
+}
+
+.cardSocials a div:hover,
+.cardSocials a div:focus {
+  transform: rotate(5deg) translateY(-2px);
+}
+
+.cardSocials a div:active {
+  transform: scale(1.1);
+}
+
+.cardSocials a {
+  flex: 1;
+  gap: 10px;
+  height: 100%;
+}
+
+.cardSocials a div {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.facebook {
+  background-image: url("../img/icons/social/facebook.svg");
+}
+
+/* --------------- WAITER TEAM -------------- */
+.waiterTeam {
+  width: 100%;
+
+  margin-bottom: 200px;
+}
+
+.waiterTeamHeader {
+  width: 100%;
+  height: 600px;
+  background-color: var(--color-gold);
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: flex-end;
+
+  margin-bottom: 200px;
+}
+
+.waiterTeamHeaderContent {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.waiterTeamHeaderContent h2 {
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--bg-color);
+  order: 1;
+  margin-bottom: 1.9rem;
+}
+
+.waiterTeamHeaderContent h3 {
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--primary-color);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.waiterTeamHeaderImage {
+  flex: 1;
+  background-image: url(../img/team/camarero_sbg.png);
+  height: 800px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* ------------ waiter team description ---------- */
+.waiterTeamDescription {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+  margin-bottom: 200px;
+}
+
+.waiterTeamDescriptionImage {
+  flex: 2;
+  background-image: url(../img/icons/camareroIco.svg);
+  height: 310px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.waiterTeamDescriptionContent {
+  flex: 4;
+}
+
+.waiterTeamDescriptionContent p {
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  line-height: 2.1rem;
+  margin-bottom: 40px;
+}
+
+/* ---------- waiter members ------------ */
+.waiterTeamMembers {
+  width: 85%;
+  margin-inline: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 3.75rem;
+}
+
+.waiterTeamMember {
+  flex: 1 0 21.875rem;
+  text-align: center;
+  max-width: 75%;
+}
+
+.waiterMemberFoto {
+  width: 100%;
+  height: 43.75rem;
+  margin-bottom: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.waiterTeamMember:first-child .waiterMemberFoto {
+  background-image: url(../img/team/camareroJulian.jpg);
+}
+.waiterTeamMember:nth-child(2) .waiterMemberFoto {
+  background-image: url(../img/team/camareroSergio.jpg);
+}
+.waiterTeamMember:last-child .waiterMemberFoto {
+  background-image: url(../img/team/camareraMarta.jpg);
+}
+
+.waiterTeamMember h5 {
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  margin-bottom: 1.25rem;
+}
+
+.waiterTeamMember h4 {
+  font-size: var(--size-card-header);
+  color: var(--primary-color);
+  font-family: Montserrat, sans-serif;
+  font-weight: var(--mont-medium);
+  margin-bottom: 2.1rem;
+}
+
+/* ---------- SOMMELIER STYLES ----------- */
+.sommelier {
+  width: 85%;
+  margin-inline: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.sommelierContent {
+  flex: 1;
+  margin-right: 40px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.sommelierContent h2 {
+  text-align: right;
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+  margin-bottom: 3.75rem;
+}
+
+.sommelierContent h3 {
+  text-align: right;
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.sommelierContent p {
+  text-align: right;
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  line-height: 2.1rem;
+  margin-bottom: 40px;
+  order: 2;
+}
+
+.sommelierContent a {
+  order: 3;
+  width: clamp(18.75rem, 15.963rem + 12.739vw, 31.25rem);
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.sommelierImage {
+  flex: 1;
+  margin-left: 40px;
+  height: 820px;
+  background-image: url("../img/team/sommelier.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 1px;
+}
+
+/* ----------------- MEDIA QUERIES ------------- */
+@media screen and (max-width: 1660px) {
+  .sommelier {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .waiterTeamHeader,
+  .waiterTeamHeaderContent {
+    height: clamp(18.75rem, 13.5rem + 24vw, 37.5rem);
+  }
+
+  .cuisineTeamMemberTres,
+  .waiterTeamMember:last-child {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 1376px) {
+  .cuisineTeamMember:first-child,
+  .cuisineTeamMember:nth-child(2),
+  .waiterTeamMember:first-child,
+  .waiterTeamMember:nth-child(2) {
+    margin-bottom: 50px;
+  }
+
+  header .content h2 {
+    text-shadow: 1px 1px 1px rgba(21, 21, 21, .8);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .sommelier {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .headChefMain,
+  .cuisineTeam {
+    margin-bottom: clamp(12.5rem, -9.722rem + 46.296vw, 25rem);
+  }
+  .cuisineTeamHeader,
+  .cuisineTeamHeaderContent {
+    height: clamp(18.75rem, 11.029rem + 35.294vw, 37.5rem);
+  }
+
+  .sommelier {
+    width: 100%;
+    flex-flow: column wrap;
+  }
+
+  .sommelierImage {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    background-image: url(../img/team/sommelierRes.jpg);
+    background-size: cover;
+    margin-bottom: 150px;
+    margin-left: 0;
+    order: 0;
+  }
+
+  .sommelierContent {
+    width: 85%;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .sommelierContent h2,
+  .sommelierContent h3 {
+    text-align: left;
+  }
+
+  .sommelierContent p {
+    text-align: justify;
+    width: 100%;
+  }
+
+  .sommelierContent a {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .headChefHeader {
+    flex-flow: column wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .headChefHeaderContent {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .headChefHeaderContent .container {
+    margin: 0;
+    padding: 0;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .headChefHeaderContent .container h2 {
+    margin-bottom: 1.2rem;
+  }
+
+  .headChefHeaderContent > .container > h2 > .br {
+    display: inline-block;
+  }
+
+  .headChefHeaderImage {
+    order: 1;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+  }
+
+  .headChefMainLeft {
+    flex: 5;
+  }
+
+  .headChefMainRight {
+    flex: 4;
+  }
+
+  .headChefMainRightImage {
+    background-position: left;
+  }
+
+  .cuisineTeamDescriptionImage,
+  .waiterTeamDescriptionImage {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 894px) {
+  .cuisineTeamMemberTres,
+  .waiterTeamMember:last-child {
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headChefHeader {
+    margin-bottom: 150px;
+  }
+
+  .headChefMain {
+    flex-flow: column;
+    gap: 0;
+  }
+
+  .headChefMainLeftImage {
+    display: none;
+  }
+
+  .headChefMainLeftContent p {
+    margin-left: 0;
+    text-align: justify;
+  }
+
+  .headChefMainLeftContent p:last-child {
+    margin: 0;
+  }
+
+  .headChefMainLeft {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+  }
+
+  .headChefMainRightContent {
+    margin: 0 auto;
+  }
+
+  .cuisineTeamMembers,
+  .waiterTeamMembers {
+    width: 78%;
+  }
+
+  .cuisineTeamMember,
+  .waiterTeamMember {
+    max-width: 100% !important;
+  }
+
+  .cuisineTeamMember:first-child,
+  .cuisineTeamMember:nth-child(2),
+  .waiterTeamMember:first-child,
+  .waiterTeamMember:nth-child(2) {
+    margin-bottom: 75px;
+  }
+
+  .cuisineTeamDescriptionContent p,
+  .waiterTeamDescriptionContent p {
+    text-align: justify;
+  }
+
+  .cuisineTeamDescriptionContent p:last-child,
+  .waiterTeamDescriptionContent p:last-child {
+    margin-bottom: 0;
+  }
+
+  .cuisineTeamHeader,
+  .waiterTeamHeader {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 100px;
+    height: 800px;
+  }
+
+  .cuisineTeamHeaderContent,
+  .waiterTeamHeaderContent {
+    text-align: center;
+    order: 0;
+    flex: 1;
+    margin-bottom: 50px;
+  }
+
+  .cuisineTeamHeaderImage,
+  .waiterTeamHeaderImage {
+    order: 1;
+    flex: 10;
+    width: 100%;
+  }
+
+  .cuisineTeamHeaderContent > h2 > .br,
+  .waiterTeamHeaderContent > h2 > .br {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sommelierImage,
+  .headChefHeaderImage {
+    aspect-ratio: 3 / 4;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .cuisineTeamMembers,
+  .waiterTeamMembers {
+    width: 85%;
+  }
+}

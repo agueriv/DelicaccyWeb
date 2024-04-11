@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Delicaccy</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/faviconDelicaccy.svg" type="image/x-icon">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style_contact.css">
+</head>
+
+<body>
+    <header data-parallax="scroll" data-image-src="img/contact/hero_contact.jpg">
+        <div class="menu">
+            <div class="logo">
+                <a href="index.html"><img src="img/delicaccy_logo.svg" alt="" srcset=""></a>
+            </div>
+            <button id="openBtn" class="abrirMenu"><i class="fas fa-2xl fa-bars"></i></button>
+            <nav id="nav">
+                <button id="closeBtn" class="closeBtn"><i class="fa-solid fa-2xl fa-xmark"></i></button>
+                <ul class="list-nav">
+                    <li class="nav-item"><a href="index.html">HOME</a></li>
+                    <li class="nav-item"><a href="team.html">TEAM</a></li>
+                    <li class="nav-item"><a href="menu.html">MENU</a></li>
+                    <li class="nav-item active"><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h2 class="fantasy">contact</h2>
+            <h1>GET IN <span class="br">TOUCH</span></h1>
+            <h3 class="subtitle-hero">Reserve a table</h3>
+        </div>
+    </header>
+    <main>
+        <!-- Contact info -->
+        <section class="contactInfo">
+            <div class="infoHeader">
+                <h3>contact us</h3>
+                <h2>CONTACT INFORMATION</h2>
+            </div>
+            <div class="infoItems">
+                <div class="infoItem">
+                    <h4>Address</h4>
+                    <div class="infoItemSeparator"></div>
+                    <p>C/ Antón, 72 - Granada</p>
+                </div>
+                <div class="infoItem">
+                    <h4>Phone</h4>
+                    <div class="infoItemSeparator"></div>
+                    <p>+34 645 02 54 08</p>
+                </div>
+                <div class="infoItem">
+                    <h4>Email</h4>
+                    <div class="infoItemSeparator"></div>
+                    <p>contact@delicaccy.es</p>
+                </div>
+                <div class="infoItem">
+                    <h4>Timetable</h4>
+                    <div class="infoItemSeparator"></div>
+                    <p>Open Monday - Friday</p>
+                </div>
+            </div>
+        </section>
+        <!-- Reserve interface -->
+        <section class="reserve" id="reserve">
+            <div class="reserveHeader">
+                <h2>BOOK A TABLE</h2>
+                <h3>unique experience</h3>
+            </div>
+            <form class="reserveForm" action="">
+                <div class="row">
+                    <div class="control nombreIn">
+                        <input type="text" class="nombreIn" name="name" id="name" placeholder="Write your name">
+                        <label for="name">RESERVE NAME</label>
+                    </div>
+                    <div class="control peopleIn">
+                        <select name="people" id="people">
+                            <option class="placeholderSelect" value="" selected disabled>Select number of people
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                        <label for="name">NUMBER OF PEOPLE</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="control">
+                        <label for="">RESERVE DAY</label>
+                        <table>
+                            <tbody>
+                                <tr class="head">
+                                    <td class="arrow"></td>
+                                    <td colspan="5">November</td>
+                                    <td class="arrow"></td>
+                                </tr>
+                                <tr class="weekDays">
+                                    <td>Mon</td>
+                                    <td>Tue</td>
+                                    <td>Wed</td>
+                                    <td>Thu</td>
+                                    <td>Fri</td>
+                                    <td>Sat</td>
+                                    <td>Sun</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                </tr>
+                                <tr>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="control">
+                        <select name="hour" id="hour">
+                            <option class="placeholderSelect" value="" selected disabled>Select hour for reserve
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                        <label for="hour">RESERVE HOUR</label>
+                    </div>
+                </div>
+                <button type="button" class="formButton btn">RESERVE TABLE</button>
+            </form>
+        </section>
+        <!-- Private events -->
+        <section class="privateEvents">
+            <div class="eventsContent">
+                <h3>ask us</h3>
+                <h2>PRIVATE EVENTS</h2>
+                <p>
+                    At Delicaccy, we pride ourselves on offering an exceptional service for
+                    <span class="dest">private events</span>, specially designed to make your special occasion an
+                    <span class="dest">unforgettable experience</span>.
+                </p>
+                <p>
+                    Our gourmet restaurant offers an <span class="dest">elegant and sophisticated atmosphere</span>,
+                    ideal for exclusive celebrations. From the décor to the personalised menu,
+                    we ensure that every aspect of your event reflects your style and
+                    preferences.
+                </p>
+                <p>
+                    To book our private event service, simply <span class="dest">complete the contact form</span> on
+                    our website. We will contact you as soon as possible to discuss the details
+                    of your event and provide you with a personalised quote.
+                </p>
+                <p>
+                    We look forward to the opportunity to be part of your special occasion at
+                    Delicaccy!
+                </p>
+                <a href="#contactus" class="btn">CONTACT US</a>
+            </div>
+            <div class="eventsImage"></div>
+        </section>
+        <!-- Contact us -->
+        <section class="contactUs" id="contactus">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.362493586188!2d-3.6015941234839643!3d37.16785547214466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcbd2aaf12cb%3A0x43fedf859124b5ff!2sC.%20San%20Ant%C3%B3n%2C%2072%2C%2018005%20Granada!5e0!3m2!1sen!2ses!4v1700322694744!5m2!1sen!2ses"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contactUsContent">
+                <h3>leave a message</h3>
+                <h2>CONTACT US</h2>
+                <form action="" class="contactForm">
+                    <div class="control">
+                        <input type="text" name="contactName" id="contactName" placeholder="Write your name">
+                        <label for="contactName">YOUR NAME</label>
+                    </div>
+                    <div class="control">
+                        <input type="text" name="contactEmail" id="contactEmail" placeholder="Write your email">
+                        <label for="contactEmail">YOUR EMAIL</label>
+                    </div>
+                    <div class="control">
+                        <input type="text" name="subject" id="subject" placeholder="Write the subject">
+                        <label for="subject">SUBJECT</label>
+                    </div>
+                    <div class="control">
+                        <textarea name="message" id="message" placeholder="Write your message"></textarea>
+                        <label for="message">MESSAGE</label>
+                    </div>
+                    <button type="button" class="formButton btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="logoContainer">
+            <a href="index.html">
+                <div class="logo"></div>
+            </a>
+        </div>
+        <div class="footerElement mb-50">
+            <h2>ABOUT US</h2>
+            <p>
+                Years of experience united to offer the best gourmet experience in Granada, are you going to miss it?
+            </p>
+            <div class="socials">
+                <a href="">
+                    <div class="social twitter"></div>
+                </a>
+                <a href="">
+                    <div class="social fb"></div>
+                </a>
+                <a href="">
+                    <div class="social insta"></div>
+                </a>
+                <a href="">
+                    <div class="social tripadvisor"></div>
+                </a>
+            </div>
+        </div>
+        <div class="footerElement mb-50">
+            <div class="divAuxFooter">
+                <h2>BOOK A TABLE</h2>
+                <a href="contact.html#reserve" class="btn">RESERVE TABLE</a>
+            </div>
+        </div>
+        <div class="footerElement">
+            <h2>WEB PAGES</h2>
+            <ul class="pageList">
+                <li class="pageItem"><a href="index.html">Home</a></li>
+                <li class="pageItem"><a href="team.html">Team</a></li>
+                <li class="pageItem"><a href="menu.html">Menu</a></li>
+                <li class="pageItem"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footerElement">
+            <div class="divAuxFooter">
+                <h2>GET IN TOUCH</h2>
+                <ul class="getintouchList">
+                    <li class="getintouchItem">
+                        <i class="fas fa-map-pin touchIcon"></i>
+                        <span>C/ San Antón, 72</span>
+                    </li>
+                    <li class="getintouchItem">
+                        <i class="fas fa-phone-alt touchIcon"></i>
+                        <span>+34 645 02 54 08</span>
+                    </li>
+                    <li class="getintouchItem">
+                        <i class="fas fa-clock touchIcon"></i>
+                        <span>Open Monday-Friday</span>
+                    </li>
+                    <li class="getintouchItem">
+                        <i class="fas fa-book-open touchIcon"></i>
+                        <span><a href="contact.html#reserve">Book a table</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="subFooter">
+        <p>&copy;2023 <a href="https://arielguerrero.es" target="_blank">arielguerrero.es</a> <span class="rights">| All
+                rights reserved</span></p>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/ec310343df.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</body>
+
+</html>

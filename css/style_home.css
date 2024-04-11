@@ -1,0 +1,820 @@
+/* ---------- RESERVE BAND STYLES ----------- */
+.reserve-banner {
+  width: 85%;
+  margin: 8.5rem auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.banner-content {
+  flex: 1;
+  text-align: center;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.banner-btn {
+  text-align: center;
+  flex: 1;
+}
+
+.banner-btn .btn-res {
+  width: clamp(18.75rem, 15.406rem + 15.287vw, 33.75rem);
+}
+
+.banner-content h2 {
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+}
+
+.banner-content h3 {
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  z-index: 1;
+}
+
+/* ------------ HISTORY ------------- */
+.history {
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 200px;
+}
+
+.historyImage {
+  flex: 1;
+  height: 43.438rem;
+  background-image: url("../img/home/foto1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.historyContent {
+  flex: 1;
+}
+
+.container {
+  padding: 3.125rem;
+  background-color: rgba(21, 21, 21, 1);
+  margin-left: -90px;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  border-radius: 3px;
+}
+
+.historyContent .container h2 {
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+  margin-bottom: 3.75rem;
+}
+
+.historyContent .container h3 {
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.historyContent .container p {
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  line-height: 2.1rem;
+  order: 2;
+  width: 90%;
+}
+
+/* ----------- EVENTS ------------ */
+.events {
+  width: 100%;
+  background-color: var(--color-gold);
+  padding: 150px 0;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  margin-bottom: 200px;
+}
+
+.eventContainer {
+  width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.event-item {
+  flex: 1;
+  text-align: center;
+}
+
+.event-item h2 {
+  font-size: var(--size-special-headers);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--color-bg);
+  margin-bottom: 1.563rem;
+}
+
+.event-item p {
+  color: var(--color-bg);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  width: 85%;
+  line-height: 2.1rem;
+  margin: 0 auto;
+}
+
+.iconoContainer {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  margin-bottom: 50px;
+}
+
+.iconoContainer .ico {
+  width: 70px;
+  height: 50px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.event-item:first-child .iconoContainer .ico {
+  background-image: url("../img/icons/car_ico.svg");
+}
+.event-item:nth-child(2) .iconoContainer .ico {
+  background-image: url("../img/icons/weddings_ico.svg");
+}
+.event-item:last-child .iconoContainer .ico {
+  background-image: url("../img/icons/meeting_ico.svg");
+}
+
+/* --------- FACILITIES STYLE ----------- */
+.facilities {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+
+  margin-bottom: 200px;
+}
+
+.facilitiesImage {
+  flex: 1;
+  height: 820px;
+  margin-right: 40px;
+  background-image: url("../img/home/facilitiesFoto.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.facilitiesContent {
+  flex: 1;
+  margin-left: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.facilitiesContent h2 {
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+  margin-bottom: 3.75rem;
+}
+
+.facilitiesContent h3 {
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.facilitiesContent p {
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  line-height: 2.1rem;
+  margin-bottom: 40px;
+  order: 2;
+  width: 95%;
+}
+
+.facilitiesContent a {
+  order: 3;
+  width: clamp(18.75rem, 15.963rem + 12.739vw, 31.25rem);
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/* ----------- OUR ZONES --------- */
+.zones {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+
+  margin-bottom: 200px;
+}
+
+.zone {
+  flex: 1;
+  height: 960px;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.zone:first-child {
+  background-image: url("../img/home/zona_ext.jpg");
+}
+
+.zone:nth-child(2) {
+  justify-content: space-between;
+  background-image: url("../img/home/zone_principal.jpg");
+}
+
+.zone:last-child {
+  background-image: url("../img/home/zone_private.jpg");
+}
+
+.head {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 65px;
+}
+
+.zone:nth-child(2) .head h2 {
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+  margin-bottom: 3.75rem;
+}
+
+.zone:nth-child(2) .head h3 {
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.zone .subt h3 {
+  font-family: Oxygen, sans-serif;
+  font-weight: 400;
+  font-size: var(--size-special-subt-headers);
+  color: var(--primary-color);
+  margin-bottom: 20px;
+
+  position: relative;
+}
+
+.zone .subt {
+  margin-bottom: 30px;
+}
+
+.zone .separator {
+  width: 160px;
+  height: 2px;
+  background-color: var(--color-gold);
+  margin: 0 auto;
+}
+
+/* ----------- THE OWNERS -------------- */
+.owners {
+  width: 85%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+
+  margin-bottom: 200px;
+}
+
+.ownersContent {
+  flex: 1;
+  margin-right: 40px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.ownersContent h2 {
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+  margin-bottom: 3.75rem;
+}
+
+.ownersContent h3 {
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.ownersContent p {
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  line-height: 2.1rem;
+  margin-bottom: 40px;
+  order: 2;
+  width: 95%;
+}
+
+.ownersContent a {
+  order: 3;
+  width: clamp(18.75rem, 15.963rem + 12.739vw, 31.25rem);
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: auto;
+}
+
+.ownersImage {
+  flex: 1;
+  margin-left: 40px;
+  height: 1000px;
+  background-image: url("../img/home/hermanos_martinez.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+}
+
+/* -------- REVIEWS --------- */
+.reviews {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 80px 0;
+  background-image: url("../img/home/customers_reviews.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.reviews .title {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 95px;
+}
+
+.reviews .title h2 {
+  font-size: var(--size-title-sections);
+  font-weight: var(--mont-medium);
+  font-family: Montserrat, sans-serif;
+  color: var(--primary-color);
+  order: 1;
+  margin-bottom: 3.75rem;
+}
+
+.reviews .title h3 {
+  font-size: var(--size-subt-sections);
+  font-family: Adelia, sans-serif;
+  color: var(--color-gold);
+  margin-bottom: -10px;
+  order: 0;
+  z-index: 1;
+}
+
+.reviewsItems {
+  flex: 4;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 70%;
+  gap: 10%;
+}
+
+.review {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.review p {
+  color: var(--text-color);
+  font-family: Oxygen, sans-serif;
+  font-weight: var(--ox-light);
+  font-size: var(--size-text);
+  line-height: 2.1rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.reviewsNav {
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.reviewsNav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.reviewsNav a div {
+  height: 60px;
+  width: 55px;
+  opacity: 50%;
+  transition: opacity 0.3s ease 0s;
+}
+
+.reviewsNav a:hover div,
+.reviewsNav a:focus div {
+  opacity: 100%;
+}
+
+.next {
+  background-image: url("../img/icons/arrow.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.back {
+  background-image: url("../img/icons/arrow.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.reviewImageCont {
+  width: 140px;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-gold);
+  border-radius: 50%;
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.reviewImage {
+  width: 128px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease 0s;
+}
+
+.containerRev {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.reviewImage:hover,
+.reviewImage:focus {
+  transform: scale(1.1);
+}
+
+.review:first-child .reviewImage {
+  background-image: url("../img/home/chico_review1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.review:last-child .reviewImage {
+  background-image: url("../img/home/chica_review2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.stars {
+  display: flex;
+  gap: 12px;
+  margin: 0 auto;
+  margin-bottom: 75px;
+}
+
+.star {
+  background-image: url("../img/icons/star_ico.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  aspect-ratio: 1 / 1;
+}
+
+/* -------------- MEDIA QUERIES --------------- */
+
+@media screen and (max-width: 1660px) {
+  .eventContainer {
+    width: 90%;
+  }
+
+  .facilities {
+    width: 90%;
+  }
+
+  .owners {
+    width: 90%;
+  }
+
+  .ownersContent p {
+    width: 100%;
+  }
+
+  .reviewsItems {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .eventContainer {
+    width: 100%;
+  }
+
+  .facilities {
+    width: 98%;
+  }
+
+  .zone {
+    height: 800px;
+  }
+
+  .zone:first-child {
+    order: 1;
+  }
+
+  .zone:nth-child(2) {
+    order: 0;
+    flex: 1 0 100%;
+    background-image: url(../img/home/mainZoneResponsive.jpg);
+  }
+
+  .zone:last-child {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .historyImage {
+    margin-bottom: 150px !important;
+  }
+
+  .events {
+    margin-bottom: 150px;
+  }
+  .facilities {
+    width: 100%;
+    flex-flow: column wrap;
+    margin-bottom: 150px;
+  }
+
+  .zones {
+    margin-bottom: 150px;
+  }
+
+  .owners {
+    margin-bottom: 150px;
+  }
+
+  .facilitiesImage {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    background-image: url(../img/home/facilitiesResponsive.jpg);
+    background-size: cover;
+    margin-bottom: 150px;
+    margin-right: 0;
+  }
+
+  .facilitiesContent {
+    width: 85%;
+    margin-left: 0;
+  }
+
+  .facilitiesContent p {
+    text-align: justify;
+    width: 100%;
+  }
+
+  .owners {
+    width: 100%;
+    flex-flow: column wrap;
+  }
+
+  .ownersContent {
+    text-align: left;
+    margin: 0;
+    width: 85%;
+    margin-bottom: 150px;
+  }
+
+  .ownersContent a {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .ownersContent p {
+    text-align: justify;
+  }
+
+  .ownersImage {
+    width: 100%;
+    aspect-ratio: 7 / 6;
+    background-position: top;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .reserve-banner {
+    width: 85%;
+    margin: 8.5rem auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .banner-content {
+    margin-bottom: 2rem;
+  }
+
+  .history {
+    flex-flow: column wrap;
+    margin-bottom: 150px;
+  }
+
+  .historyImage {
+    width: 100%;
+    aspect-ratio: 2/ 1;
+    margin-bottom: 100px;
+  }
+
+  .historyContent {
+    width: 85%;
+    margin-inline: auto;
+    background-color: transparent;
+  }
+
+  .historyContent .container {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .historyContent .container p {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .container {
+    padding: 3.125rem;
+    margin-left: 0;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .eventContainer {
+    justify-content: center;
+  }
+
+  .event-item {
+    flex: 1 0 21.25rem;
+    max-width: 31.25rem;
+  }
+
+  .event-item:first-child,
+  .event-item:nth-child(2) {
+    margin-bottom: 75px;
+  }
+
+  .review:last-child {
+    display: none;
+  }
+
+  .reviewsItems {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .historyImage,
+  .facilitiesImage {
+    aspect-ratio: 4 / 3;
+  }
+
+  .zone {
+    height: 650px;
+  }
+
+  .zone:first-child {
+    order: 1;
+    flex: 1 0 100%;
+  }
+
+  .zone:nth-child(2) {
+    order: 0;
+    flex: 1 0 100%;
+    background-image: url(../img/home/mainZoneResponsive.jpg);
+  }
+
+  .zone:last-child {
+    order: 2;
+    flex: 1 0 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .reviewsItems {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .historyImage,
+  .facilitiesImage,
+  .ownersImage {
+    aspect-ratio: 3 / 4;
+  }
+
+  .historyContent,
+  .facilitiesContent,
+  .ownersContent {
+    width: 90%;
+  }
+
+  .zone {
+    height: 550px;
+  }
+}

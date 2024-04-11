@@ -7,15 +7,15 @@
     <img src="img/delicaccy_logo.svg" alt="Logo" width="200" height="80">
   </a>
 
-  <h3 align="center">Web BioPark</h3>
+  <h3 align="center">Web Deliccacy</h3>
 
   <p align="center">
     Web desarrollada con HTML, CSS y JS tematizada en un restaurante gourmet y estrella michelín ubicado en Granada.
     <br />
-    <a href="https://github.com/agueriv/BioParkWeb/README.md"><strong>Explora la documentación »</strong></a>
+    <a href="https://github.com/agueriv/DeliccacyWeb/README.md"><strong>Explora la documentación »</strong></a>
     <br />
     <br />
-    <a href="https://agueriv3110.ieszaidinvergeles.es/DIWEB/BioPark/">Ver demo</a>
+    <a href="https://agueriv3110.ieszaidinvergeles.es/DIWEB/DelicaccyParallax/">Ver demo</a>
   </p>
 </div>
 
@@ -46,9 +46,9 @@
 ## Sobre el Proyecto
 
 Esta web es una web realizada en HTML y CSS puro con una librería de JS para realizar el efecto parallax. Consta de 4 páginas/vistas en las cuáles se trata una sección distinta:
-- Página **HOME**: Esta es la página de inicio de la Web, en ella se obtiene un resumen de la web y el BioPark.
-- Página **TEAA**: En esta página hablamos de las instalaciones de BioPark y de cada una de sus secciones.
-- Página **MENU**: En este página se explica la forma de BioPark de conservar el medio ambiente.
+- Página **HOME**: Aquí conoceras la historia del restaurante, sus instalaciones y quiénes son sus fundadores.
+- Página **TEAM**: En esta página descubriras quién es el chef principal y el equipo de chefs y camarero.
+- Página **MENU**: Podrás deleitarte con los platos principales estrella del restaurante y ver dos menús de degustación que son increibles.
 - Página **CONTACT**: Es lá página de contacto donde encontrarás la información de contacto con el restaurante Deliccacy.
 
 <p align="right">(<a href="#readme-top">Inicio</a>)</p>
